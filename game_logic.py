@@ -44,3 +44,8 @@ def play_game():
 		print("Congratulations, you saved the snowman!")
 	else:
 		print("Game Over! The word was:", secret_word)
+	
+	# Ask the user for another round
+	game_restart = input("Do you want to play again? (y/n): ").lower()
+	if game_restart == "y":
+		play_game()
